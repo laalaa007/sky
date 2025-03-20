@@ -5,7 +5,7 @@ import lombok.Data;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
+import java.util.Date;
 
 @Data
 public class OrdersSubmitDTO implements Serializable {
@@ -17,7 +17,7 @@ public class OrdersSubmitDTO implements Serializable {
     private String remark;
     //预计送达时间
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
-    private LocalDateTime estimatedDeliveryTime;
+    private Date estimatedDeliveryTime;
     //配送状态  1立即送出  0选择具体时间
     private Integer deliveryStatus;
     //餐具数量

@@ -7,8 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
+import java.util.Date;
 
 @Data
 @Builder
@@ -40,5 +39,5 @@ public class User implements Serializable {
     private String avatar;
 
     //注册时间
-    private LocalDateTime createTime;
+    private Date createTime;
 }

@@ -6,7 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
-import java.time.LocalDateTime;
+import java.util.Date;
 
 @Data
 @Builder
@@ -14,8 +14,8 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public class DataOverViewQueryDTO implements Serializable {
 
-    private LocalDateTime begin;
+    private Date begin;
 
-    private LocalDateTime end;
+    private Date end;
 
 }

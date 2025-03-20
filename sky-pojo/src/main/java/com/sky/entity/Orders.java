@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
+import java.util.Date;
 
 /**
  * 订单
@@ -54,10 +54,10 @@ public class Orders implements Serializable {
     private Long addressBookId;
 
     //下单时间
-    private LocalDateTime orderTime;
+    private Date orderTime;
 
     //结账时间
-    private LocalDateTime checkoutTime;
+    private Date checkoutTime;
 
     //支付方式 1微信，2支付宝
     private Integer payMethod;
@@ -90,16 +90,16 @@ public class Orders implements Serializable {
     private String rejectionReason;
 
     //订单取消时间
-    private LocalDateTime cancelTime;
+    private Date cancelTime;
 
     //预计送达时间
-    private LocalDateTime estimatedDeliveryTime;
+    private Date estimatedDeliveryTime;
 
     //配送状态  1立即送出  0选择具体时间
     private Integer deliveryStatus;
 
     //送达时间
-    private LocalDateTime deliveryTime;
+    private Date deliveryTime;
 
     //打包费
     private int packAmount;

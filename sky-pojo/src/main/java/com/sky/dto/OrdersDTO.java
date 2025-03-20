@@ -4,7 +4,7 @@ import com.sky.entity.OrderDetail;
 import lombok.Data;
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 
 @Data
@@ -25,10 +25,10 @@ public class OrdersDTO implements Serializable {
     private Long addressBookId;
 
     //下单时间
-    private LocalDateTime orderTime;
+    private Date orderTime;
 
     //结账时间
-    private LocalDateTime checkoutTime;
+    private Date checkoutTime;
 
     //支付方式 1微信，2支付宝
     private Integer payMethod;
